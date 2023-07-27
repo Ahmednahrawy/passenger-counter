@@ -9,7 +9,11 @@ function increment() {
 
 function save() {
     let countStr = count + " - "
-    saveEl.textContent += countStr
-    countEl.textContent = 0
-    count = 0
+    if(count > 0) {
+        saveEl.textContent += countStr
+        countEl.textContent = 0
+        count = 0    
+    } else {
+        countEl.textContent = "push increment first"
+    }
 }
