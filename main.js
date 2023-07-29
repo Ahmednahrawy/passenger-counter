@@ -1,8 +1,10 @@
+
+// ###############
 let saveEl =document.getElementById("save-el")
 let countEl = document.getElementById("count-el")
 let count = 0
 let resetEl = document.getElementById("reset-el")
-
+// let footerEl = document.querySelector(".footer")
 function increment() {
     count ++
     countEl.textContent = count
